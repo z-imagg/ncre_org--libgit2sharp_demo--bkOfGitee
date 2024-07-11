@@ -73,7 +73,7 @@ class Program
     LibGit2Sharp.Commit commit1= repoPtr.Lookup<Commit>(commit1Hash);
     LibGit2Sharp.Tree tree0 = commit0.Tree;
     LibGit2Sharp.Tree tree1 = commit1.Tree;
-    TreeChanges tree_diff = repoPtr.Diff.Compare<TreeChanges>(tree1, tree0);
+    TreeChanges tree_diff = repoPtr.Diff.Compare<TreeChanges>(tree1, tree0);//猜测 这行 最终调用了 libgit2的 git_diff_tree_to_tree
 
     return tree_diff;
   }
