@@ -3,10 +3,10 @@
   "console": "integratedTerminal",
   "configurations": [
     {
-      "name": "C#: MyDotNetCoreApp.csproj Debug",
+      "name": "C#: libgit2sharp_demo.csproj Debug",
       "type": "dotnet",
       "request": "launch",
-      "projectPath": "${workspaceFolder}/MyDotNetCoreApp.csproj"
+      "projectPath": "${workspaceFolder}/libgit2sharp_demo.csproj"
     }
 
   ]
