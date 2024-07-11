@@ -23,6 +23,7 @@ namespace CloneRepo
         List<LibGit2Sharp.Commit> commitLs=GetGitCommits(localRepoDir);
         // string commitLsJsonTxt=System.Text.Json.JsonSerializer.Serialize(commitLs[0]); //这句话会异常退出, 应该是libgit2sharp对libgit2封装不够完善
         Console.WriteLine($"commitLs.Count={commitLs.Count}, commitLs[0]= {commitLs[0]} , commitLs[-1]= {commitLs[commitLs.Count-1]}  ");
+        // commitLs.Count=601, commitLs[0]= a1e7272fa856d38eb3d59ba15532e2280381419d , commitLs[-1]= 5681647c83fca0b18d0c8ba4c53ea4a48f57e35f  
       }
       catch (Exception ex)
       {
