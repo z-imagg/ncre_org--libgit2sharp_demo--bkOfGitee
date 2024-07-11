@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "ms-dotnettools.csdevkit", // C# Dev Kit @ v1.7.27 ; 此 vscode扩展依赖以下两个扩展
+      //"ms-dotnettools.csharp" //  C# @ v2.34.12
+      //"ms-dotnettools.vscode-dotnet-runtime" // .NET Install Tool @ v2.0.8
+  ]
+}

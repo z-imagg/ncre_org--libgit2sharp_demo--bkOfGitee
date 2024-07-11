@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "console": "integratedTerminal",
+  "configurations": [
+    {
+      "name": "C#: MyDotNetCoreApp.csproj Debug",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/MyDotNetCoreApp.csproj"
+    }
+
+  ]
+}
