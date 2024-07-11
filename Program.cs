@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using LibGit2Sharp;
 using System.Text.Json;
 
@@ -15,6 +16,9 @@ class Program
   static void Main(string[] args){
     string repoUrl = "http://giteaz:3000/bal/cmd-wrap.git";
     string localRepoDir = "/tmp/gitReopTest01_for_libgit2";
+    
+    //先删除 本地仓库目录,否则克隆仓库会报错
+    Directory.Delete(localRepoDir,true);
 
     try{
       //克隆仓库
